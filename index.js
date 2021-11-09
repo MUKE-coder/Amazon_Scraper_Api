@@ -32,7 +32,7 @@ app.get("/products/:productId", async (req, res) => {
   }
 });
 
-// Get product reviews
+// Get Amazon product reviews
 app.get("/products/:productId/reviews", async (req, res) => {
   const { productId } = req.params;
   const { api_key } = req.query;
